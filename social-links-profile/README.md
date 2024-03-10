@@ -66,7 +66,7 @@ A list of things that a learned or remembered when I made this first project of 
 - [Example of .editorconfig](https://github.com/facebook/react/blob/main/.editorconfig) - I use this example of `.editorconfig` from Facebook
 - [Using alias](https://dev.to/tilly/aliasing-in-vite-w-typescript-1lfo) - This tutorial helps me to remember how to use alias to referencing directories
 - [Setup eslint and prettier](https://dev.to/marcosdiasdev/adicionando-eslint-e-prettier-a-um-projeto-react-criado-com-vitejs-hgn) - This tutorial helps on setup eslint and prettier in my project
-- [Named exports and default exports](https://www.freecodecamp.org/news/difference-between-default-and-named-exports-in-javascript/)
+- [Named exports and default exports](https://www.freecodecamp.org/news/difference-between-default-and-named-exports-in-javascript/) - Article that explains the difference between named exports and default exports
 
 ## Author
 
