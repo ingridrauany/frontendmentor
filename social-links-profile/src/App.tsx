@@ -1,10 +1,19 @@
-import Button from "./components/Button";
+import { Card, Container, ProfilePicture, SocialButtons } from "./components";
+import { socialLinks } from "./data/socialLinks";
+import { Description, Location, Name } from "./styles";
 
-export default function App() {
+const App = () => {
   return (
-    <>
-      <h1>Test aplication</h1>
-      <Button />
-    </>
+    <Container>
+      <Card>
+        <ProfilePicture />
+        <Name>Ingrid Rauany</Name>
+        <Location>Minas Gerais, Brazil</Location>
+        <Description>&quot;Front-end developer and avid reader.&quot;</Description>
+        <SocialButtons socialLinks={socialLinks} />
+      </Card>
+    </Container>
   );
-}
+};
+
+export default App;
