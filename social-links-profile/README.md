@@ -7,6 +7,7 @@ This is a solution to the [Social links profile challenge on Frontend Mentor](ht
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
+  - [Running the application](#running-the-application)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -25,6 +26,16 @@ Users should be able to:
 ### Screenshot
 
 ![](./public/screenshot.png)
+
+### Running the application
+
+Run the development server:
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:5138](http://localhost:5138) with your browser to see the result.
 
 ### Links
 
@@ -55,6 +66,7 @@ A list of things that a learned or remembered when I made this first project of 
 - [Example of .editorconfig](https://github.com/facebook/react/blob/main/.editorconfig) - I use this example of `.editorconfig` from Facebook
 - [Using alias](https://dev.to/tilly/aliasing-in-vite-w-typescript-1lfo) - This tutorial helps me to remember how to use alias to referencing directories
 - [Setup eslint and prettier](https://dev.to/marcosdiasdev/adicionando-eslint-e-prettier-a-um-projeto-react-criado-com-vitejs-hgn) - This tutorial helps on setup eslint and prettier in my project
+- [Named exports and default exports](https://www.freecodecamp.org/news/difference-between-default-and-named-exports-in-javascript/)
 
 ## Author
 
