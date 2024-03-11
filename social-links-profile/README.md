@@ -39,8 +39,8 @@ Open [http://localhost:5138](http://localhost:5138) with your browser to see the
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/ingridrauany/frontendmentor/tree/main/social-links-profile)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/ingridrauany/frontendmentor/tree/main/social-links-profile](https://github.com/ingridrauany/frontendmentor/tree/main/social-links-profile)
+- Live Site URL: [https://main--frontendmentor-social-links-profile.netlify.app/](https://main--frontendmentor-social-links-profile.netlify.app/)
 
 ## My process
 
