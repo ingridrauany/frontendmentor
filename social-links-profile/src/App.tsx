@@ -7,8 +7,8 @@ const App = () => {
     <Container>
       <Card>
         <ProfilePicture />
-        <Name>Ingrid Rauany</Name>
-        <Location>Minas Gerais, Brazil</Location>
+        <Name>Jessica Randall</Name>
+        <Location>London, United Kingdom</Location>
         <Description>&quot;Front-end developer and avid reader.&quot;</Description>
         <SocialButtons socialLinks={socialLinks} />
       </Card>

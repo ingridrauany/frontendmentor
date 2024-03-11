@@ -7,9 +7,8 @@ export const CardBox = styled.main`
   align-items: center;
   background-color: #1f1f1f;
   border-radius: 15px;
-  width: 25%;
-  height: 80%;
-  padding: 40px 0;
+  width: 20%;
+  min-height: 70%;
 
   @media (max-width: 450px) {
     width: 80%;
