@@ -1,0 +1,3 @@
+[build]
+  command = "cd social-links-profile && npm install && npm run build"
+  publish = "social-links-profile/build"
