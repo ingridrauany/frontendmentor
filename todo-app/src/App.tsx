@@ -1,24 +1,19 @@
 import { useState } from 'react';
 import { v4 as uuid } from 'uuid';
-
-type Todo = {
-  id: string;
-  name: string;
-  isComplete: boolean;
-};
+import { Container, Header, SearchInput, TodoList } from './components';
 
 const App = () => {
   const [todos, setTodos] = useState<Todo[]>([]);
   const [inputValue, setInputValue] = useState<string>('');
 
-  const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
-    if (e.key === 'Enter') {
-      const value: string = e.currentTarget.value;
+  const addTask = (e: React.KeyboardEvent<HTMLInputElement>): void => {
+    const inputValue: string = e.currentTarget.value;
+    if (e.key === 'Enter' && inputValue.trim().length !== 0) {
       const updatedTodos: Todo[] = [
         ...todos,
         {
           id: uuid(),
-          name: value,
+          name: inputValue,
           isComplete: false,
         },
       ];
@@ -27,22 +22,24 @@ const App = () => {
     }
   };
 
+  const changeStatusTask = (id: string): void => {
+    setTodos(
+      todos.map((todo) => {
+        if (todo.id === id) {
+          return { ...todo, isComplete: !todo.isComplete };
+        } else {
+          return todo;
+        }
+      }),
+    );
+  };
+
   return (
-    <div>
-      <input
-        name="name"
-        type="text"
-        placeholder="Digite o texto"
-        onKeyDown={handleKeyPress}
-        value={inputValue}
-        onChange={(e) => setInputValue(e.target.value)}
-      />
-      <ul>
-        {todos.map((item, index) => (
-          <li key={index}>{item.name}</li>
-        ))}
-      </ul>
-    </div>
+    <Container>
+      <Header />
+      <SearchInput addTask={addTask} inputValue={inputValue} setInputValue={setInputValue} />
+      <TodoList todos={todos} changeStatusTask={changeStatusTask} />
+    </Container>
   );
 };
 
